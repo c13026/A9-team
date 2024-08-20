@@ -2,8 +2,8 @@
   background: #D37453;
   color: #FFF;
   position: relative;
-  min-height: 220px;
-  margin-top: 220px;
+  min-height: 250px;
+  margin-top: 12.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,11 +11,12 @@
 
 .footer-box {
   background: #D37453;
-  height: 420px;
+
+  height: 25vw;
   z-index: -1;
   border-radius: 100%;
   position: absolute;
-  top: -210px;
+  top: -12.5vw;
   bottom: 0;
   left: 0;
   right: 0;
@@ -83,14 +84,9 @@
 
   }
   .footer-box {
-    height: 120px;
-    z-index: -1;
-    border-radius: 100%;
-    position: absolute;
-    top: -60px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    // height: 6vw;
+
+    // top: -3vw;
   }
   .footer .row{
     margin: 24px auto;
@@ -107,6 +103,9 @@
   
 }
 @media (max-width:767px){
+  .footer .row{
+    margin: 16px auto;
+  }
   .decl{
     display: flex;
     flex-direction: column;
