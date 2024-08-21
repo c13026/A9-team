@@ -1,6 +1,6 @@
 .footer {
-  background: #D37453;
-  color: #FFF;
+  background: $pimary-400;
+  color: $white;
   position: relative;
   min-height: 250px;
   margin-top: 10vw;
@@ -11,7 +11,7 @@
 }
 
 .footer-box {
-  background: #D37453;
+  background: $pimary-400;
   height: 20vw;
   z-index: -1;
   border-radius: 50%;
@@ -26,12 +26,12 @@
   li {
     a {
       text-decoration: none;
-      color: #FFF;
+      color: $white;
       display: inline-block;
       transition: all 1s ease-in-out;
 
       &:hover {
-        text-decoration: underline wavy 2px #FFF;
+        text-decoration: underline wavy 2px $white;
       }
     }
 
@@ -56,7 +56,7 @@
 
   a {
     text-decoration: none;
-    color: #FFF;
+    color: $white;
     padding: 4px 8px;
     display: inline-block;
     font-size: 14px;
