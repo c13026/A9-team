@@ -1,0 +1,127 @@
+.container {
+    text-align: center;
+  
+  }
+  
+  .header {
+    .container{
+        padding: 0;
+    }
+    .navbar-brand {
+      width: 200px;
+      margin-left:  8px;
+    }
+  
+    .hd-logo {
+      width: 100%;
+      margin: 16px 0 32px;
+    }
+  }
+  
+  a.d-lg-none.ms-auto {
+    color: $black;
+  }
+  
+  .header {
+    .myend {
+      justify-content: flex-end;
+    }
+  
+    .navbar > .container {
+      justify-content: flex-start;
+    }
+  
+    .close-icon {
+      font-size: 2rem;
+      display: block;
+    }
+  
+    .shopping-icon {
+      font-size: 2rem;
+      padding: 1rem;
+    }
+  
+    .navbar-toggler {
+      &[aria-expanded="false"] > .close-icon {
+        display: none;
+      }
+      &[aria-expanded="true"] {
+        > .navbar-toggler-icon {
+          display: none !important;
+        }
+        + .nav-item > .shopping-icon {
+          display: none;
+        }
+      }
+      color: $black;
+      width: 2rem;
+      height: 2rem;
+      padding: 0 ;
+      margin-right: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: transparent;
+      cursor: pointer;
+      user-select:none;
+      -webkit-user-select:none; 
+      -moz-user-select:none;
+    }
+  
+    .nav-item {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+  
+    .nav-link.nav-link {
+      padding: 12px 24px !important;
+      width: inherit;
+      white-space:nowrap;
+    }
+  
+    &.navbar {
+      border-bottom: 1px solid $gray-200;
+      background: #FFFC;
+      backdrop-filter: blur(20px) contrast(200%);
+      -webkit-backdrop-filter: blur(20px) contrast(200%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      transition: all .5s ease-in-out;
+      z-index: 1000;
+  
+      &:hover {
+        background: $white;
+      }
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .header .navbar-brand {
+      width: 50%;
+    }
+    .nav-item {
+        border-top: $gray-200 1px solid;
+      } 
+  }
+  
+  @media (max-width: 575px) {
+    .header {
+      .navbar-brand {
+        width: 40%;
+      }
+  
+      .hd-logo {
+        margin: 0 0 8px;
+      }
+  
+      &.navbar {
+        padding: 0;
+      }
+    }
+  }
+  
