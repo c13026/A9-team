@@ -1,0 +1,26 @@
+// 自訂變數
+$primary: #D37453; // 自訂主色調
+
+// $accent:green;
+$pimary-100:#FCF1EB;
+$pimary-200:#FBB8B7;
+$pimary-300:#F7A589;
+$pimary-400:#D37453;
+// #F7C209;E57E5B 漸層色碼??
+
+$secondary:#F7C20B;
+$white:#FFFFFF;
+$black:#1F1F1F;
+
+$gray-100:#F5F5F5;
+// $gray-200:#;
+$gray-300:#BAB9B9;
+$gray-400:#878787;
+// $gray-500:#;
+$gray-600:#3C3C3C;
+
+
+
+
+// 引入 Bootstrap 原始碼文件
+@import"../../../node_modules/bootstrap/scss/bootstrap.scss";
