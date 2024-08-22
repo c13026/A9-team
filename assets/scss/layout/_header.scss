@@ -1,6 +1,5 @@
 .container {
     text-align: center;
-  
   }
   
   .header {
@@ -16,6 +15,7 @@
       width: 100%;
       margin: 16px 0 32px;
     }
+
   }
   
   a.d-lg-none.ms-auto {
@@ -26,7 +26,6 @@
     .myend {
       justify-content: flex-end;
     }
-  
     .navbar > .container {
       justify-content: flex-start;
     }
@@ -80,11 +79,13 @@
       padding: 12px 24px !important;
       width: inherit;
       white-space:nowrap;
+      color: $black;
+      font-weight: 500;
     }
   
     &.navbar {
       border-bottom: 1px solid $gray-200;
-      background: #FFFC;
+      background-color: rgba($white, 0.75);
       backdrop-filter: blur(20px) contrast(200%);
       -webkit-backdrop-filter: blur(20px) contrast(200%);
       position: fixed;

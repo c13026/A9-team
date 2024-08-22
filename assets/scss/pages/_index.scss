@@ -1,3 +1,22 @@
 body{
   min-height: 100vh;
 }
+.mytop{
+  margin-top: 8.5rem;
+}
+.linear-text{
+  background: linear-gradient(0deg, $secondary, $pimary-400);
+  background: -webkit-linear-gradient(0deg, $secondary, $pimary-400);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}

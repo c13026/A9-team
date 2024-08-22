@@ -11,15 +11,16 @@
   },
   "devDependencies": {
     "ejs": "^3.1.9",
-    "vite": "^4.2.0",
-    "vite-plugin-ejs": "^1.6.4"
-  },
-  "dependencies": {
-    "bootstrap": "^5.3.3",
     "gh-pages": "^5.0.0",
     "glob": "^10.2.2",
     "sass": "^1.61.0",
     "sass-loader": "^13.2.2",
+    "vite": "^4.2.0",
+    "vite-plugin-ejs": "^1.6.4",
     "vite-plugin-live-reload": "^3.0.2"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3"
   }
 }
