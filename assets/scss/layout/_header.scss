@@ -81,6 +81,10 @@
       white-space:nowrap;
       color: $black;
       font-weight: 500;
+      // transition: all .25s ease-in-out;
+      &:hover {
+        text-decoration: wavy underline 3px $secondary;
+      }
     }
   
     &.navbar {
