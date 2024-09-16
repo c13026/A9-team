@@ -20,55 +20,166 @@
 <body>
   <%- include('./layout/header'); -%>
 
-    <div class="container mytop">
-      <br>
-      <h1 class="linear-text">測試文字漸層</h1>
-      <br>
-      <!-- <h1 class="index-title">我是首頁<i class="bi bi-line"></i></h1> -->
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
+    <div class="mytop">
+      <!--Banner輪播-->
+    <section>
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../assets/images/banner-01.svg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/banner-02.svg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../assets/images/banner-03.svg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
 
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat"><img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
+    <!--首頁商品列表-->
+    <section class="container mt-6 ">
+      <h3 class="fw-bold">熱門客製化商品</h3>
+      <div class="hr-border rounded-pil"></div>
+      <div class="d-flex mt-6">
+      <ul class="scroll-container d-flex p-0 m-0 gap-4">
+        <li class="list-unstyled item text-center  ">
+          <article class="bg-gray p-3 rounded">
+            <div class="d-flex flex-column ">
+              <a href="#">
+                <img src="../assets/images/canvas-bag.svg" alt="帆布袋" class="img-fluid">
+              </a>
+              <a href="#" class="mt-2-5 text-decoration-none text-dark lh-20">【客製化】精緻帆布袋</a>
+              <p class="m-0 mt-2 lh-20">NT$120~180</p>
+            </div>
+            <div class="mt-12">
+              <a class="btn btn-primary-300 custom-btn text-light rounded-pill border-0" href="#" role="button">加入購物車</a>
+            </div>
+          </article>
+          </li>
 
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
+          <li class="list-unstyled item text-center ">
+            <article class="bg-gray p-3 rounded">
+              <div class="d-flex flex-column ">
+                <a href="#">
+                  <img src="../assets/images/usb-flash-drive.svg" alt="隨身碟" class="img-fluid">
+                </a>
+                <a href="#" class="mt-2-5 text-decoration-none text-dark lh-20">【客製化】金屬USB隨身碟</a>
+                <p class="m-0 mt-2 lh-20">NT$450</p>
+              </div>
+              <div class="mt-12">
+                <a class="btn btn-primary-300 custom-btn text-light rounded-pill border-0" href="#" role="button">加入購物車</a>
+              </div>
+            </article>
+            </li>
 
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
+            <li class="list-unstyled item text-center ">
+              <article class="bg-gray p-3 rounded">
+                <div class="d-flex flex-column ">
+                  <a href="#">
+                    <img src="../assets/images/badge.svg" alt="胸章" class="img-fluid">
+                  </a>
+                  <a href="#" class="mt-2-5 text-decoration-none text-dark lh-20">【客製化】客製胸章</a>
+                  <p class="m-0 mt-2 lh-20">NT$250~290</p>
+                </div>
+                <div class="mt-12">
+                  <a class="btn btn-primary-300 custom-btn text-light rounded-pill border-0" href="#" role="button">加入購物車</a>
+                </div>
+              </article>
+              </li>
 
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat"><img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
 
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
+              <li class="list-unstyled item text-center ">
+                <article class="bg-gray p-3 rounded">
+                  <div class="d-flex flex-column ">
+                    <a href="#">
+                      <img src="../assets/images/earphone-case.svg" alt="帆布袋" class="img-fluid">
+                    </a>
+                    <a href="#" class="mt-2-5 text-decoration-none text-dark">【客製化】Airpods耳機套</a>
+                    <p class="m-0 mt-2">NT$300~450</p>
+                  </div>
+                  <div class="btn mt-2-5 ">
+                    <a class="text-light p-12-0 p-0-32 btn-primary-300 rounded-pill " href="#" role="button">加入購物車</a>
+                  </div>
+                </article>
+                </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-row-reverse">
+      <a href="#" class="fw-bold mt-28 text-decoration-none text-dark ">更多商品  <img class="ms-12" src="../assets/images/arrow-icon.svg" alt="#"></a>
+    </div>
+    </section>
 
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
+    <!--似顏繪-->
+    <section class="mt-6 h-640">
+      <div class="d-flex align-items-center justify-content-center">
+        <div class="custom me-108 rounded">
+          <div class="d-flex flex-column align-items-center custom-m ">
+          <h4 class="linear-text">客製自己的</h4>
+          <h4 class="linear-text">專屬似顏繪形象</h4>
+          <button type="button" class="btn btn-outline-primary rounded-pill">訂製似顏繪 <img src="../assets/images/arrow-color-icon.svg" alt=""></button>
+        </div>
+        </div>
+        <img src="../assets/images/Comparison-photo.svg" alt="">
+        <img src="../assets/images/Comparison-paintings.svg" alt="">
+      </div>
+    </section>
+
+    <!--團訂募集-->
+    <section class="mt-6 h-640">
+      <div class="d-flex align-items-center justify-content-center">
+      <img src="../assets/images/Group-buying.svg" alt="">
+      </div>
+     </section>
+
+     <!--品牌介紹-->
+     <section class="container mt-6 ">
+      <h3 class="text-center">聯絡我們</h3>
+      <div class="hr-border rounded-pil"></div>
+      <div  class="d-flex align-items-center">
+        <img src="../assets/images/brand.svg" alt="">
+          <div>
+            <h4 class="linear-text">將藝術融入生活，設計豐富每一天</h4>
+            <p>我們的工作室，致力於將藝術融入你的生活，用設計為每一天增添不一樣的色彩。</p>
+            <p>無論是獨特的似顏繪畫像，還是充滿個性化的周邊商品，我們希望通過創意的力量，讓你在日常中發現藝術的美好。</p>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"></button>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       </div>
+
+       <div  class="d-flex align-items-center flex-row-reverse">
+        <img src="../assets/images/gallery.svg" alt="">
+          <div>
+            <h4 class="linear-text">設計新靈感，讓生活更精彩</h4>
+            <p>當代生活繁忙，往往缺少一絲藝術的點綴。然而，真正豐富生活的，不僅是日復一日的日常，更是那些賦予生活色彩的靈感與創意。</p>
+            <p>我們相信，每個人都是生活的設計師，而我們的使命，就是為你提供豐富的靈感和作品，讓你的生活更具藝術感、更有趣、更精彩。</p>
+            <p>讓我們一起，用藝術設計豐富每一天。</p>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next"></button>
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+       </div>
+     </section>
+      
+
+  
     </div>
 
     <%- include('./layout/footer'); -%>

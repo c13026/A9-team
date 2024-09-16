@@ -20,3 +20,92 @@ body{
   'GRAD' 0,
   'opsz' 24
 }
+
+.mt-6{
+  margin-top: 60px;
+}
+
+.mt-2-5{
+  margin-top: 12px;
+}
+
+.bg-gray{
+  background-color: $gray-100;
+}
+
+.btn-primary-300{
+  background-color: $pimary-300 !important;
+}
+
+.p-12-0{
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.p-0-32{
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.custom-btn {
+  padding: 12px 32px !important; /* 上下12px，左右32px */
+}
+
+.mt-12{
+  margin-top: 12px;
+}
+
+.mt-28{
+  margin-top: 28px;
+}
+
+.ms-12{
+  margin-left: 12px;
+}
+
+.me-108{
+  margin-right: 108px;
+}
+
+.lh-20{
+  line-height: 20px;
+}
+
+.hr-border {
+  border: none; /* 移除默認邊框 */
+  height: 8px; /* 設定線條高度 */
+  width: 72px;
+  background-color: $pimary-300 ;/* 設定線條顏色 */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 16px; /* 設定上下外邊距 */
+  border-radius: 20px;  
+}
+
+.scroll-container {
+  overflow-x: auto; /* 允許橫向滾動 */
+  white-space: nowrap; /* 防止內容換行 */
+  -ms-overflow-style: none;  /* 針對 IE 和 Edge 隱藏滾動條 */
+  scrollbar-width: none;     /* 針對 Firefox 隱藏滾動條 */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* 針對 Chrome、Safari 和 Edge 隱藏滾動條 */
+}
+.scroll-container .item {
+  min-width: 352px; /* 設置每個項目的最小寬度 */
+}
+
+
+.h-640{
+height: 640px;
+background-color: $pimary-100;
+}
+
+.custom{
+  background-color: white;
+}
+
+.custom-m{
+  margin: 24px 36px;
+}
