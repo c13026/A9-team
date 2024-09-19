@@ -3,7 +3,11 @@ body{
 }
 .mytop{
   margin-top: 8.5rem;
+  @media (max-width: 576px) {
+    margin-top: 4rem;
 }
+}
+
 .linear-text{
   background: linear-gradient(0deg, $secondary, $pimary-400);
   background: -webkit-linear-gradient(0deg, $secondary, $pimary-400);
@@ -51,6 +55,8 @@ body{
   padding: 12px 32px !important; /* 上下12px，左右32px */
 }
 
+
+
 .mt-12{
   margin-top: 12px;
 }
@@ -71,6 +77,22 @@ body{
   line-height: 20px;
 }
 
+
+.product-list{
+  margin-top: 60px;
+  @media (max-width: 768px) {
+    margin-top: 40px;
+}
+}
+
+@media (max-width: 768px) {
+  h3.fw-bold {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+
+
 .hr-border {
   border: none; /* 移除默認邊框 */
   height: 8px; /* 設定線條高度 */
@@ -80,7 +102,30 @@ body{
   margin-right: auto;
   margin-top: 16px; /* 設定上下外邊距 */
   border-radius: 20px;  
+
+  @media (max-width: 768px) {
+  height: 4px; /* 設定線條高度 */
+  width: 54px;
+  margin-top: 8px; /* 設定上下外邊距 */
 }
+}
+
+.product-list-item{
+  margin-top: 60px;
+  @media (max-width: 768px) {
+    margin-top: 25px;
+}
+}
+
+.product-list-img{
+  max-height: 240px;
+  max-width: 320px;
+  @media (max-width: 768px) {
+  max-height: 170px;
+  max-width: 226px;
+}
+}
+
 
 .scroll-container {
   overflow-x: auto; /* 允許橫向滾動 */
@@ -97,10 +142,16 @@ body{
 }
 
 
-.h-640{
-height: 640px;
-background-color: $pimary-100;
+.swiper-slide{
+width: 352px;
+
+@media (max-width: 768px) {
+  width: 258px;
 }
+
+}
+
+
 
 .custom{
   background-color: white;
@@ -109,3 +160,46 @@ background-color: $pimary-100;
 .custom-m{
   margin: 24px 36px;
 }
+
+.img-custom {
+  width: 100%;
+  height: auto; /* 確保圖片等比例縮放 */
+}
+
+
+.instructions-card{
+padding-top: 36px;
+padding-bottom: 36px;
+}
+
+.instructions-card-buttom{
+  margin-top: 36px;
+}
+
+
+.painting-BG{
+  background-color: $pimary-100;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  }
+
+@media (max-width: 992px) {
+
+.p-relative{
+  position: relative; /* 使子元素能够相对定位 */
+}
+
+.p-absolute{
+  position: absolute;
+  z-index: 10;
+  bottom: -20%;
+ 
+}
+
+.painting-BG{
+  position: relative;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+}
+
