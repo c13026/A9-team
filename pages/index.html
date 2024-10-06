@@ -15,64 +15,224 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <style>
+    
+  </style>
 </head>
 
 <body>
   <%- include('./layout/header'); -%>
-
-    <div class="container mytop">
-      <br>
-      <h1 class="linear-text">測試文字漸層</h1>
-      <br>
-      <!-- <h1 class="index-title">我是首頁<i class="bi bi-line"></i></h1> -->
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat"><img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat"><img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
-    <img src="../assets/images/cat.jpg" style="width: calc(25% - 3px);" alt="cat">
+    <div class="conntainer-fluid mytop">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide d-none d-md-block" style="background: center / cover url(../assets/images/banner01.png);">
+            <div class="container">
+              <div class="titlebox">
+                <h2 class="bn-title">打造您的Q版風格！<br>獨一無二的<span class="linear-text">客製化Q版</span>似顏繪！</h2>
+                <div><a class="btn btn-success btn-text" href="#">立即客製</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-none d-md-block" style="background: center / contain url(../assets/images/banner02.png)">
+            <div class="container">
+              <div class="titlebox">
+                <h2 class="bn-title">個性無限<br><span class="linear-text">訂製您的ultimate</span>商品體驗！</h2>
+                <div><a class="btn btn-success btn-text" href="#">立即選購</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-none d-md-block" style="background: center / contain url(../assets/images/banner03.png);">
+            <div class="container">
+              <div class="titlebox">
+                <h2 class="bn-title">把握機會！<br>限時限量，<span class="linear-text">客訂募集</span>特惠中！</h2>
+                <div><a class="btn btn-success btn-text" href="#">立即選購</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-md-none" style="background: center / cover url(../assets/images/banner-sm-01.png);">
+            <div class="container">
+              <div class="sm-titlebox">
+                <h2 class="bn-title">打造您的Q版風格！<br>獨一無二的<span class="linear-text">客製化Q版</span>似顏繪！</h2>
+                <div><a class="btn btn-success btn-text" href="#">立即客製</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-md-none" style="background: center / cover url(../assets/images/banner-sm-02.png);">
+            <div class="container">
+              <div class="sm-titlebox">
+                <h2 class="bn-title">個性無限<br><span class="linear-text">訂製您的ultimate</span>商品體驗！</h2>
+                <div><a class="btn btn-success btn-text" href="#">立即選購</a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide d-md-none" style="background: center / cover url(../assets/images/banner-sm-03.png);">
+            <div class="container">
+            <div class="sm-titlebox">
+              <h2 class="bn-title">把握機會！<br>限時限量，<span class="linear-text">客訂募集</span>特惠中！</h2>
+              <div><a class="btn btn-success btn-text" href="#">立即選購</a></div>
+            </div>
+          </div>
+          </div>
+        </div>
+        <div class="btn-next1"><span class="material-symbols-outlined">arrow_forward</span></div>
+        <div class="btn-prev1"><span class="material-symbols-outlined">arrow_back</span></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          slidesPerView: 1,
+          spaceBetween: 0,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".btn-next1",
+            prevEl: ".btn-prev1",
+          },
+        });
+      </script>
     </div>
+    <div class="container p-0">
+      <h3 class="h3title">熱門客製化商品</h3><br>
+      <div class="swiper mySwiper1">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card">
+              <img class="img-fluid2" src="https://fakeimg.pl/258x194/" alt="">
+              <p>【客製化】精緻帆布袋</p>
+              <p>NT$120~180</p>
+              <div><a class="btn btn-success btn-text" href="#">加入購物車</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img class="img-fluid2" src="https://fakeimg.pl/258x194/" alt="">
+              <p>【客製化】精緻帆布袋</p>
+              <p>NT$120~180</p>
+              <div><a class="btn btn-success btn-text" href="#">加入購物車</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img class="img-fluid2" src="https://fakeimg.pl/258x194/" alt="">
+              <p>【客製化】精緻帆布袋</p>
+              <p>NT$120~180</p>
+              <div><a class="btn btn-success btn-text" href="#">加入購物車</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img class="img-fluid2" src="https://fakeimg.pl/258x194/" alt="">
+              <p>【客製化】精緻帆布袋</p>
+              <p>NT$120~180</p>
+              <div><a class="btn btn-success btn-text" href="#">加入購物車</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img class="img-fluid2" src="https://fakeimg.pl/258x194/" alt="">
+              <p>【客製化】精緻帆布袋</p>
+              <p>NT$120~180</p>
+              <div><a class="btn btn-success btn-text" href="#">加入購物車</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img class="img-fluid2" src="https://fakeimg.pl/258x194/" alt="">
+              <p>【客製化】精緻帆布袋</p>
+              <p>NT$120~180</p>
+              <div><a class="btn btn-success btn-text" href="#">加入購物車</a></div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card">
+              <img class="img-fluid2" src="https://fakeimg.pl/258x194/" alt="">
+              <p>【客製化】精緻帆布袋</p>
+              <p>NT$120~180</p>
+              <div><a class="btn btn-success btn-text" href="#">加入購物車</a></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+      <div class="p-2"><a style="color: #3C3C3C;" class="d-flex justify-content-end text-decoration-none" href="#"><span>更多商品　</span><span class="material-symbols-outlined">arrow_forward</span></a></div>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+      <!-- Initialize Swiper -->
+      <script>
+        var swiper = new Swiper(".mySwiper1", {
+          slidesPerView: "auto",
+          spaceBetween: 24,
+        });
+      </script>
+      <!-- <h1 class="linear-text">測試文字漸層</h1> -->
+    </div>
+    <div class="container-fluid bgpink caricature">
+      <div class="row">
+        <div class="col-12 col-lg-4 order-3 order-lg-1 position-relative">
+          <div class="titlebtnbox titlebtnbox0">
+            <h2 class="linear-text h2title">客製自己的<br>專屬似顏繪形象</h2><br>
+            <a class="btn btn-outline-primary btn1" href="#"><span>訂製似顏繪　</span><span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="col-6 col-lg-4 order-1">
+          <img  class="img-fluid" src="../assets/images/sample.jpg" alt="">
+        </div>
+        <div class="col-6 col-lg-4 order-2">
+          <img class="img-fluid" src="../assets/images/caricature.png" alt="">
+        </div>
+      </div>
+    </div>
+    <div class="bgpink">
+      <div class="container position-relative">
+        <div class="row">
+          <div class=" col-12 col-lg-9">
+            <div class="airpod"></div>
+          </div>
+          <div class="col-12 col-lg-4">
+            <div class="titlebtnbox">
+              <h2 class="linear-text h2title">團訂募集<br>限時優惠揪團</h2><br>
+              <a class="btn btn-outline-primary btn1" href="#"><span>一起揪團　</span><span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="h3title">認識我們</div><br>
+      <div class="row flex-column flex-md-row-reverse  align-items-center mb-2">
+        <div class="col-12 col-md-5 mb-5">
+          <div class="textbox">
+            <h4 class="linear-text font-w700">將藝術融入生活，設計豐富每一天</h4><br>
+            <p>我們的工作室，致力於將藝術融入你的生活，用設計為每一天增添不一樣的色彩。</p>
+            <p>無論是獨特的似顏繪畫像，還是充滿個性化的周邊商品，我們希望通過創意的力量，讓你在日常中發現藝術的美好。</p>
+            <a class="btn btn-success btn1 btn0 btn-text" href="#"><span>品牌故事　</span><span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 mb-5">
+          <img class="img-fluid1" src="../assets/images/brand-story.png" alt="">
+        </div>
+      </div>
+      <div class="row flex-column flex-md-row  align-items-center">
+        <div class="col-12 col-md-5 my-5">
+          <div class="textbox">
+            <h4 class="linear-text font-w700">設計新靈感，讓生活更精彩</h4><br>
+            <p>當代生活繁忙，往往缺少一絲藝術的點綴。然而，真正豐富生活的，不僅是日復一日的日常，更是那些賦予生活色彩的靈感與創意。</p>
+            <p>我們相信，每個人都是生活的設計師，而我們的使命，就是為你提供豐富的靈感和作品，讓你的生活更具藝術感、更有趣、更精彩。</p>
+            <p>讓我們一起，用藝術設計豐富每一天。</p>
+            <a class="btn btn-success btn1 btn0 btn-text" href="#"><span>作品畫廊　</span><span class="material-symbols-outlined">arrow_forward</span></a>
+          </div>
+        </div>
+        <div class="col-12 col-md-7 mb-5">
+          <img class="img-fluid1" src="../assets/images/works-gallery.png" alt="">
+        </div>
+      </div>
+    </div>
     <%- include('./layout/footer'); -%>
 
+      
       <script type="module" src="../main.js"></script>
 </body>
 
