@@ -184,22 +184,152 @@ padding-bottom: 36px;
   }
 
 @media (max-width: 992px) {
-
 .p-relative{
-  position: relative; /* 使子元素能够相对定位 */
-}
-
-.p-absolute{
-  position: absolute;
+  position: relative;
   z-index: 10;
-  bottom: -20%;
- 
+  bottom: 40px;
 }
 
 .painting-BG{
-  position: relative;
   padding-top: 40px;
-  padding-bottom: 40px;
+}
+
+.column-reverse{
+  flex-direction:column-reverse;
 }
 }
+
+
+.airpod{
+  position: relative;  // 相對定位
+  width: calc(100% - 52px);
+  padding-bottom: calc(55.2516% - 52px);  //  55.2516%為(高/寬)得長寬比-推擠52px
+  margin: 40px 0 92px;  // 40px+推擠52px
+  border: 8px white solid;
+  border-radius: 16px;
+
+  @media (max-width: 992px) {
+    width: calc(100% - 20px);
+  padding-bottom: calc(55.2516% - 20px); 
+}
+}
+.airpod::after{
+  content: "";  // 一定要放這行,否則after無法顯示
+  width: 100%;
+  padding-bottom: 55.2516%; // 長寬比
+  background: center / cover no-repeat url(../assets/images/Group-buying.svg);
+  position: absolute;  // 絕對定位
+  left: 52px;
+  top: 52px;
+}
+
+
+.contact p{
+  font-size: 20px;
+  line-height: 1.5;
+  @media (max-width: 992px) {
+    font-size: 14px;}
+}
+
+.contact h4{
+  font-size: 24px;
+  line-height: 1.2;
+  @media (max-width: 992px) {
+    font-size: 16px;}
+}
+
+.contact-flex{
+  @media (max-width: 992px) {
+    flex-direction: column-reverse;
+    text-align: center;
+    
+  }
+}
+
+.gallery-flex{
+  flex-direction: row-reverse;
+  @media (max-width: 992px) {
+    flex-direction: column-reverse;
+    justify-content: center;
+    
+  }
+}
+
+.contact-mr48{
+margin-right: 48px;
+@media (max-width: 992px) {
+  margin-right: 0px;
+}
+}
+
+.contact-ml48{
+  margin-left: 48px;
+  @media (max-width: 992px) {
+    margin-left: 0px;
+  }
+  }
+  
+.contact-t{
+  margin-top: 60px;
+  @media (max-width: 992px) {
+    margin-top: 40px;
+  }
+}
+
+.contact-img-t{
+  margin-top: 60px;
+  margin-bottom: 40px;
+  @media (max-width: 992px) {
+    margin-top: 16px;
+    margin-bottom: 40px;
+  }
+}
+
+.contact-font-t{
+  margin-top: 60px;
+  @media (max-width: 992px) {
+    margin-top: 24px;
+  }
+}
+
+
+.contact-arr{
+  justify-content: left;
+  text-align: left;
+  @media (max-width: 992px) {
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+.contact-h3{
+  font-size: 28px;
+  line-height: 1.2;
+  @media (max-width: 992px) {
+  font-size: 16px;
+}}
+
+
+.p-relative-buy{
+  position: relative;
+  z-index: 10;
+  right: 24px;
+}
+
+@media (max-width: 992px) {
+  .p-relative-buy{
+    position: relative;
+    z-index: 10;
+    bottom: 94px;
+    right: 0px;
+  }
+  
+  .painting-BG{
+    padding-top: 40px;
+  }
+  
+  .column-reverse-buy{
+    flex-direction:column;
+  }
+  }
 
