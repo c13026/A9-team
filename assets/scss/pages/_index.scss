@@ -255,17 +255,17 @@ padding-bottom: 36px;
   }
 }
 
-.contact-mr48{
-margin-right: 48px;
+.contact-pr48{
+padding-right: 48px;
 @media (max-width: 992px) {
-  margin-right: 0px;
+  padding-right: 0px;
 }
 }
 
-.contact-ml48{
-  margin-left: 48px;
+.contact-pl48{
+ padding-left: 48px;
   @media (max-width: 992px) {
-    margin-left: 0px;
+    padding-left: 0px;
   }
   }
   
@@ -277,7 +277,7 @@ margin-right: 48px;
 }
 
 .contact-img-t{
-  margin-top: 60px;
+  margin-top: 40px;
   margin-bottom: 40px;
   @media (max-width: 992px) {
     margin-top: 16px;
@@ -333,3 +333,11 @@ margin-right: 48px;
   }
   }
 
+.text-t36{
+  margin-top: 36px;
+}
+
+
+.text-t8{
+  margin-top: 8px;
+}
