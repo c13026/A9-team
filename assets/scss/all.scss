@@ -1,9 +1,12 @@
-@import'./layout/custom.scss';
-@import './layout/header.scss';
-@import './layout/footer.scss';
-@import './layout/fonts.scss';
+@import "./helper/mixins.scss";
 
+@import "./layout/custom.scss";
+@import "./layout/header.scss";
+@import "./layout/footer.scss";
+@import "./layout/fonts.scss";
 
-@import './pages/index.scss';
-@import './node_modules/bootstrap/scss/bootstrap';
-@import './../../bootstrap-5.3.3/scss/bootstrap.scss';
+@import "./pages/index.scss";
+@import "./pages/brandstory.scss";
+
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "./../../bootstrap-5.3.3/scss/bootstrap.scss";
