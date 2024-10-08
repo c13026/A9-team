@@ -137,14 +137,26 @@ ul {
       padding-top: 0;
       padding-bottom: 0;
     }
+    & .line {
+      display: flex;
+      justify-content: center;
+    }
     & .vertical-line {
       position: absolute;
       top: 0;
       left: 50%;
+      width: 2px;
       height: 100%;
-      border-left: 4px dashed $pimary-300;
+      background: linear-gradient(
+        to bottom,
+        #f7a589,
+        #f7a589 10px,
+        transparent 10px,
+        transparent
+      );
+      background-size: 100% 14px;
       @include mobile-large {
-        border: 0;
+        background-size: 0;
       }
     }
     .intro-card {
