@@ -31,9 +31,65 @@
         .height-inherit {
             height: inherit;
         }
+        .classifybox{
+            
+        }
+        /* @media (max-width:767px) {
+            .classifybox{
+                display: flex;
+                flex-wrap: nowrap;
+                overflow: hidden;
+            }
+        } */
+        .cardbox{
+            text-decoration: none;
+         }
+         .classifybox.colorbox label{
+            margin-bottom: .75rem;
+         }
+         .pagination .material-symbols-outlined{
+            font-size: 16px;
+            position: relative;
+            top: 2px;
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 700,
+            'GRAD' 0,
+            'opsz' 24
+         }
+         .swiper-slide{
+            width: auto;
+         }
+         .classifysticky{
+            position: sticky;
+            top:8.5rem;
+            background: #FFF;
+            z-index: 999;
+            box-shadow: 0px 6px 5px -5px #CCC;
+         }
+         .classifysticky::after{
+            content: "";
+            width: 3rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: linear-gradient(to right, transparent, white);
+            z-index: 1001;
+         }
+         @media (max-width:767px) {
+            .classifysticky{
+                top:9.5rem;
+            }
+         }
+         @media (max-width:575px) {
+            .classifysticky{
+                top:4rem;
+            }
+         }
     </style>
-  <script type="module" crossorigin src="/A9-team/assets/main-ca7f6896.js"></script>
-  <link rel="stylesheet" href="/A9-team/assets/main-f95f5dc5.css">
+  <script type="module" crossorigin src="/A9-team/assets/main-8f36e28d.js"></script>
+  <link rel="stylesheet" href="/A9-team/assets/main-05413e81.css">
 </head>
 
 <body>
@@ -84,12 +140,371 @@
             </div>
         </div>
         <div class="container">
-            <nav aria-label="breadcrumb">
+            <nav class="mt-3" aria-label="breadcrumb">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a class="text-decoration-none" href="#">首頁</a></li>
+                    <li class="breadcrumb-item"><a class="text-decoration-none" href="index.html">首頁</a></li>
                     <li class="breadcrumb-item active" aria-current="page">訂製商品</li>
                 </ol>
             </nav>
+            <div class="classifysticky py-1">
+                
+                <div class="d-flex mt-3 colorbox classifybox">
+                    <div class="swiper mySwiper16">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類1</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類2</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類3</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類4</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類5</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類6</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類7</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類8</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類9</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類10</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類11</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類12</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類13</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類14</a></label>
+                          </div>
+                          <div class="swiper-slide">
+                            <label class="me-5"><input class="d-none" type="radio" name="classify"><a
+                                class="btn btn-outline-primary">分類15</a></label>
+                          </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                      <!-- Swiper JS -->
+                        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+                        <!-- Initialize Swiper -->
+                        <script>
+                            var swiper = new Swiper(".mySwiper16", {
+                            slidesPerView: "auto",
+                            spaceBetween: 16,
+                            });
+                        </script>
+                </div>
+            </div>
+            <div class="row mt-4" >
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱1</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱2</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱3</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱4</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱5</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱6</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱7</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱8</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱9</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱10</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱11</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱12</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱13</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱14</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱15</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱16</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱17</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱18</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱19</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                    <a class="cardbox" href="#">
+                        <div class="card">
+                            <div class="card-head">
+                                <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="h5title text-center">商品名稱20</h4>
+                                <h5 class="h6title">NT$456~789</h5>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="d-flex mb-4 justify-content-center">
+                <nav aria-label="...">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link" href="#"><span class="material-symbols-outlined">arrow_back_ios</span></a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">1</a></li>
+                      <li class="page-item active" aria-current="page">
+                        <a class="page-link" href="#">2</a>
+                      </li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link" href="#"><span class="material-symbols-outlined">arrow_forward_ios</span></a>
+                      </li>
+                    </ul>
+                  </nav>
+            </div>
         </div>
 
 
