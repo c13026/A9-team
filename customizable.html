@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>芒果果似顏繪</title>
+    <title>客製化商品|芒果果似顏繪</title>
     <link rel="icon" type="image/x-icon" href="/A9-team/assets/favicon-9a105323.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet"
@@ -27,18 +27,15 @@
             height: 100%;
         }
 
-
         .height-inherit {
             height: inherit;
         }
         /* .classifybox{
             
-        } */
-        /* @media (max-width:767px) {
+        }
+        @media (max-width:767px) {
             .classifybox{
-                display: flex;
-                flex-wrap: nowrap;
-                overflow: hidden;
+
             }
         } */
         .cardbox{
@@ -86,6 +83,9 @@
             .classifysticky{
                 top:4rem;
             }
+         }
+         .form-select{
+            text-align: left;
          }
     </style>
   <script type="module" crossorigin src="/A9-team/assets/main-5f7b8e1b.js"></script>
@@ -226,19 +226,35 @@
                 </div>
             </div>
             <div class="row mt-4 flex-row-reverse">
-                <div class="col-12 col-sm-4 col-md-3 col-lg-2">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>商品排序</option>
-                        <option value="1">上架時間：由新到舊</option>
-                        <option value="2">上架時間：由舊到新</option>
-                        <option value="3">價格：由高到低</option>
-                        <option value="4">價格：由低到高</option>
-                      </select>
+                <div class="col-12 col-md-4 col-lg-3 col-xl-2">
+                    <div class="dropdown text-left">
+                        <button class="form-select" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            商品排序
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" style="width: 100%;">
+                            <li><a class="dropdown-item" href="#" data-value="上架時間：由新到舊">上架時間：由新到舊</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="上架時間：由舊到新">上架時間：由舊到新</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="價格：由高到低">價格：由高到低</a></li>
+                            <li><a class="dropdown-item" href="#" data-value="價格：由低到高">價格：由低到高</a></li>
+                        </ul>
+                    </div>
+                    <script>
+                        const dropdownItems = document.querySelectorAll('.dropdown-item');
+                        const dropdownButton = document.getElementById('dropdownMenuButton');
+                
+                        dropdownItems.forEach(item => {
+                            item.addEventListener('click', function (e) {
+                                e.preventDefault();
+                                dropdownButton.textContent = this.textContent;
+                                dropdownButton.setAttribute('data-value', this.getAttribute('data-value'));
+                            });
+                        });
+                    </script>
                 </div>
             </div>
             <div class="row mt-4" >
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-4">
-                    <a class="cardbox" href="#">
+                    <a class="cardbox" href="customize_detail.html">
                         <div class="card">
                             <div class="card-head">
                                 <img class="img-fluid" src="https://fakeimg.pl/1024x768/" alt="">
